@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"theqtcompany.qt-core",
+			"gruntfuggly.todo-tree",
+			"redhat.vscode-xml",
+		]
+	},
+	"settings": {
+		"[qss]": {
+			"editor.defaultFormatter": "vscode.css-language-features"
+		},
+		"editor.formatOnSave": true,
+		"xml.format.maxLineWidth": 0,
+		"todo-tree.highlights.enabled": false,
+	}
+}
