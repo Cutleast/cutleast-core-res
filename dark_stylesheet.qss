@@ -295,3 +295,17 @@ SectionAreaWidget QPushButton#toggle_button:hover
 {
     background: #1cffffff;
 }
+
+/* Toast */
+Toast, Toast QLabel
+{
+    color: #ffffff;
+}
+Toast QFrame
+{
+    background: #202020;
+}
+Toast QFrame#content_frame
+{
+    border-color: #393939;
+}

@@ -582,3 +582,21 @@ SectionAreaWidget QPushButton#toggle_button
     border: 0px solid;
     background: transparent;
 }
+
+/* Toast */
+Toast, Toast QLabel
+{
+    background: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+Toast QFrame
+{
+    padding: 5px;
+    border-radius: 8px;
+}
+Toast QFrame#content_frame
+{
+    border: 1px solid;
+}
