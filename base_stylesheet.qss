@@ -52,14 +52,15 @@ QLCDNumber
 }
 
 /* Buttons */
-QAbstractButton
+QPushButton,
+QToolButton
 {
     padding: 7px;
     margin: 2px;
     border: 1px solid;
     border-radius: 5px;
 }
-QAbstractButton#primary,
+QPushButton#primary,
 QPushButton[default=true]
 {
     background: <accent_color>;
@@ -69,20 +70,21 @@ QToolButton#primary
 {
     border-bottom-color: <accent_color>;
 }
-QAbstractButton#primary:hover:!disabled,
+QPushButton#primary:hover:!disabled,
 QToolButton#primary:hover:!disabled,
 QPushButton[default=true]:hover:!disabled
 {
     background: <highlighted_accent>;
 }
-QAbstractButton#primary:disabled,
+QPushButton#primary:disabled,
 QToolButton#primary:disabled,
 QPushButton[default=true]:disabled
 {
     background: #666666;
     border-color: #666666;
 }
-QAbstractButton:checked, QToolButton:checked
+QPushButton:checked,
+QToolButton:checked
 {
     border-color: <accent_color>;
 }
