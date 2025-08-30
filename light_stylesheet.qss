@@ -16,7 +16,8 @@
 
 /* Windows, Messageboxes and Dialogs */
 QMainWindow, QDialog,
-QMainWindow:disabled, QDialog:disabled
+QMainWindow:disabled, QDialog:disabled,
+#root
 {
     background: #ffffff;
 }

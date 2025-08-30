@@ -15,7 +15,8 @@
 
 /* Windows, Messageboxes and Dialogs */
 QMainWindow, QDialog,
-QMainWindow:disabled, QDialog:disabled
+QMainWindow:disabled, QDialog:disabled,
+#root
 {
     background: #202020;
 }
