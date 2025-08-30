@@ -4,10 +4,6 @@
     background: transparent;
 }
 
-*
-{
-    font-size: 10pt;
-}
 *:disabled
 {
     background: transparent;
