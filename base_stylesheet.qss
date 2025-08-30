@@ -487,12 +487,14 @@ QTabBar
 {
     border-radius: 8px;
 }
-QTabBar:top
+QTabBar:top,
+QTabBar:bottom
 {
     margin-left: 12px;
     margin-right: 12px;
 }
-QTabBar:left
+QTabBar:left,
+QTabBar:right
 {
     margin-top: 12px;
     margin-bottom: 12px;
@@ -505,13 +507,15 @@ QTabBar::tab
     margin: 4px;
     border-radius: 4px;
 }
-QTabBar::tab:top
+QTabBar::tab:top,
+QTabBar::tab:bottom
 {
     padding-left: 16px;
     padding-right: 16px;
     height: 25px;
 }
-QTabBar::tab:left
+QTabBar::tab:left,
+QTabBar::tab:right
 {
     padding-top: 16px;
     padding-bottom: 16px;
