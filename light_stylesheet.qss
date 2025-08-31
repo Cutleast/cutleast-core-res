@@ -117,7 +117,8 @@ QAbstractItemView::indicator
 }
 QCheckBox::indicator:hover,
 QRadioButton::indicator:hover,
-QAbstractItemView::indicator:hover
+QAbstractItemView::indicator:hover,
+QMenu QCheckBox:hover
 {
     background: #1c000000;
 }
