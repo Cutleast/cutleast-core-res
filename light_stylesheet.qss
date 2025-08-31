@@ -164,6 +164,12 @@ QAbstractItemView#completer_popup::item:selected
     background: #15000000;
 }
 
+/* Progressbar */
+QProgressBar
+{
+    background: #15000000;
+}
+
 /* List Widget */
 QListWidget
 {

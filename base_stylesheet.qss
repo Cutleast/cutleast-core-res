@@ -317,12 +317,14 @@ QAbstractItemView#completer_popup::item:selected
 QProgressBar
 {
     padding: 0px;
-    height: 2px;
+    max-height: 4px;
+    border: none;
+    border-radius: 2px;
 }
 QProgressBar::chunk
 {
     background: <accent_color>;
-    border-radius: 8px;
+    border-radius: 2px;
 }
 
 /* List Widget */
