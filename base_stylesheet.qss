@@ -217,7 +217,8 @@ QRadioButton
 }
 QCheckBox::indicator,
 QRadioButton::indicator,
-QAbstractItemView::indicator
+QAbstractItemView::indicator,
+QGroupBox::indicator
 {
     width: 16px;
     height: 16px;
@@ -232,13 +233,15 @@ QAbstractItemView::indicator
 }
 QCheckBox::indicator:checked,
 QRadioButton::indicator:checked,
-QAbstractItemView::indicator:checked
+QAbstractItemView::indicator:checked,
+QGroupBox::indicator:checked
 {
     background: <accent_color>;
 }
 QCheckBox::indicator:hover:checked,
 QRadioButton::indicator:hover:checked,
-QAbstractItemView::indicator:hover:checked
+QAbstractItemView::indicator:hover:checked,
+QGroupBox::indicator:hover:checked
 {
     background: <highlighted_accent>;
 }

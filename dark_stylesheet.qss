@@ -119,25 +119,29 @@ QScrollBar::down-arrow
 /* Checkboxes */
 QCheckBox::indicator,
 QRadioButton::indicator,
-QAbstractItemView::indicator
+QAbstractItemView::indicator,
+QGroupBox::indicator
 {
     background: #0affffff;
 }
 QCheckBox::indicator:hover,
 QRadioButton::indicator:hover,
 QAbstractItemView::indicator:hover,
-QMenu QCheckBox:hover
+QMenu QCheckBox:hover,
+QGroupBox::indicator:hover
 {
     background: #1cffffff;
 }
 QCheckBox::indicator:disabled:checked,
 QRadioButton::indicator:disabled:checked,
-QAbstractItemView::indicator:disabled:checked
+QAbstractItemView::indicator:disabled:checked,
+QGroupBox::indicator:disabled:checked
 {
     background: #1cffffff;
 }
 QCheckBox::indicator:checked,
-QAbstractItemView::indicator:checked
+QAbstractItemView::indicator:checked,
+QGroupBox::indicator:checked
 {
     image: url(:/icons/dark/checkmark.svg);
 }
