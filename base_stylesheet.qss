@@ -122,7 +122,8 @@ QDoubleSpinBox:focus
 }
 BrowseLineEdit,
 CopyLineEdit,
-PasteLineEdit
+PasteLineEdit,
+KeyLineEdit
 {
     padding-right: 40px;
 }
