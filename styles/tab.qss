@@ -1,0 +1,76 @@
+/* 
+ * Copyright (c) Cutleast
+ */
+
+/* Tab Widget & Tab Bar */
+QTabWidget {
+    padding: 4px;
+}
+
+QTabWidget::pane {
+    background-color: @primary_bg_color;
+    border-radius: 8px;
+    padding: 4px;
+}
+QTabBar {
+    background-color: @secondary_bg_color;
+    border-radius: 8px;
+}
+QTabBar:top,
+QTabBar:bottom {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+QTabBar:left,
+QTabBar:right {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+QTabBar::tab {
+    background-color: @secondary_bg_color;
+    border: 0px solid;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 4px;
+}
+QTabBar::tab:hover {
+    background-color: @hover_bg_color;
+}
+QTabBar::tab:selected {
+    background-color: @active_bg_color;
+    color: @primary_accent_color;
+}
+QTabBar::tab:top,
+QTabBar::tab:bottom {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 25px;
+}
+QTabBar::tab:left,
+QTabBar::tab:right {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 25px;
+}
+QTabBar::close-button {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 1px;
+}
+QTabWidget::tab-bar#centered_tab,
+QTabWidget::tab-bar#icon_bar {
+    alignment: center;
+}
+QTabWidget::tab-bar#icon_bar {
+    padding: 16px;
+}
+QTabWidget QTabBar#icon_bar::tab {
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+}
+QTabWidget QTabBar#icon_bar::tab:left {
+    padding-top: -8px;
+    padding-bottom: 8px;
+}

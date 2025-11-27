@@ -1,0 +1,17 @@
+/* 
+ * Copyright (c) Cutleast
+ */
+
+/* Tooltips & Toast */
+QToolTip,
+Toast > QFrame {
+    background-color: @popup_bg_color;
+    color: @popup_fg_color;
+    border: 1px solid @border_color;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+Toast QLabel {
+    color: @popup_fg_color;
+}

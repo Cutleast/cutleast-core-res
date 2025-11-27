@@ -1,0 +1,22 @@
+{
+    "ui_mode": "Light",
+    "title_font": "Segoe UI",
+    "primary_font": "Segoe UI",
+    "monospace_font": "Consolas",
+    "primary_bg_color": "#ffffff",
+    "secondary_bg_color": "#ededed",
+    "tertiary_bg_color": "#dfdfdf",
+    "hover_bg_color": "#dadada",
+    "active_bg_color": "#dadada",
+    "highlighted_bg_color": "#999999",
+    "disabled_bg_color": "#ffffff",
+    "primary_fg_color": "#000000",
+    "secondary_fg_color": "#444444",
+    "disabled_fg_color": "#808080",
+    "placeholder_fg_color": "#444444",
+    "border_color": "#e2e2e2",
+    "disabled_border_color": "#ededed",
+    "popup_bg_color": "#ffffff",
+    "popup_fg_color": "#000000",
+    "alt_accent_fg_color": "#ffffff"
+}

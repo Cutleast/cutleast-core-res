@@ -1,0 +1,38 @@
+/* 
+ * Copyright (c) Cutleast
+ */
+
+/* Groupboxes */
+QGroupBox {
+    background-color: @primary_bg_color;
+    border-radius: 8px;
+    border: 1px solid @border_color;
+    margin-top: 30px;
+    padding: 5px;
+    /* padding-top: 10px; */
+    font-size: 22px;
+}
+
+QGroupBox::title {
+    background-color: @primary_bg_color;
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-right: 5px;
+}
+
+/* Section Area Widget */
+SectionAreaWidget {
+    background-color: @primary_bg_color;
+}
+SectionAreaWidget QPushButton#toggle_button {
+    background-color: @primary_bg_color;
+    border-color: @primary_bg_color;
+}
+SectionAreaWidget QPushButton#toggle_button:hover {
+    background-color: @hover_bg_color;
+}
+SectionAreaWidget QPushButton#toggle_button:pressed {
+    background-color: @active_bg_color;
+}

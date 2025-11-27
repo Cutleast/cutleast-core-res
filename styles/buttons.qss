@@ -1,0 +1,93 @@
+/* 
+ * Copyright (c) Cutleast
+ */
+
+/* Regular buttons */
+QAbstractButton {
+    background-color: @secondary_bg_color;
+    border: 1px solid @border_color;
+    padding: 7px;
+    border-radius: 5px;
+}
+QAbstractButton:hover {
+    background-color: @hover_bg_color;
+}
+QAbstractButton:pressed {
+    background-color: @active_bg_color;
+}
+QAbstractButton:checked {
+    border-color: @primary_accent_color;
+}
+QAbstractButton:disabled {
+    background-color: @disabled_bg_color;
+    color: @disabled_fg_color;
+    border-color: @disabled_border_color;
+}
+
+/* Primary buttons */
+QAbstractButton[default=true],
+QAbstractButton#primary {
+    background-color: @primary_accent_color;
+    color: @accent_fg_color;
+    border-color: @primary_accent_color;
+}
+QAbstractButton[default=true]:hover,
+QAbstractButton#primary:hover {
+    background-color: @hover_accent_color;
+}
+QAbstractButton[default=true]:disabled,
+QAbstractButton#primary:disabled {
+    background-color: @highlighted_bg_color;
+    color: @primary_fg_color;
+    border-color: @highlighted_bg_color;
+}
+
+/* Primary buttons with shortcut hints */
+ShortcutButton[default=true] > QLabel,
+ShortcutButton#primary > QLabel {
+    color: @accent_fg_color;
+}
+
+/* Checkboxes & Radiobuttons */
+QCheckBox,
+QRadioButton,
+QCheckBox:hover,
+QRadioButton:hover {
+    background-color: transparent;
+    border: 0px;
+}
+
+QCheckBox::indicator,
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+    background-color: @secondary_bg_color;
+    margin-right: 4px;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/icons/@accent_fg_ui_mode/checkmark.svg);
+}
+QRadioButton::indicator {
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    border: 4px solid @secondary_bg_color;
+}
+
+QCheckBox::indicator:hover,
+QRadioButton::indicator:hover {
+    background-color: @hover_bg_color;
+    border-color: @hover_bg_color;
+}
+QCheckBox::indicator:checked,
+QRadioButton::indicator:checked {
+    background-color: @primary_accent_color;
+}
+QCheckBox::indicator:checked:hover,
+QRadioButton::indicator:checked:hover {
+    background-color: @hover_accent_color;
+    border-color: @hover_bg_color;
+}

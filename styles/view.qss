@@ -1,0 +1,123 @@
+/* 
+ * Copyright (c) Cutleast
+ */
+
+/* List Widget */
+QListWidget {
+    background-color: @primary_bg_color;
+    border: 1px solid @border_color;
+    border-radius: 8px;
+    alternate-background-color: @secondary_bg_color;
+}
+QListWidget::item {
+    color: @primary_fg_color;
+    padding: 3px;
+}
+QListWidget::item:first {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+QListWidget::item:last {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+QListWidget::item:selected {
+    color: @primary_accent_color;
+}
+QListWidget::item:selected,
+QListWidget::item:hover
+{
+    background-color: @hover_bg_color;
+}
+QListWidget::item:disabled {
+    background-color: transparent;
+    color: @disabled_fg_color;
+}
+
+/* Treeview */
+QTreeView {
+    background-color: @primary_bg_color;
+    alternate-background-color: @secondary_bg_color;
+    border: 1px solid @border_color;
+    border-radius: 8px;
+}
+QTreeView::branch {
+    padding: 2px;
+    border: 0px;
+    background-color: transparent;
+}
+QTreeView::branch:has-children {
+    image: url(:/icons/@ui_mode/arrow_right.svg);
+}
+QTreeView::branch:has-children:open {
+    image: url(:/icons/@ui_mode/arrow_down.svg);
+}
+QTreeView::item {
+    border: 0px;
+    padding: 3px;
+}
+QTreeView::item:selected {
+    color: @primary_accent_color;
+}
+QTreeView::item:selected,
+QTreeView::item:hover {
+    background-color: @hover_bg_color;
+}
+QTreeView::item:disabled {
+    background-color: transparent;
+    color: @disabled_fg_color;
+}
+
+/* Header View */
+QHeaderView {
+    background-color: transparent;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+QHeaderView::section {
+    background-color: transparent;
+    padding: 5px;
+    border: 1px solid @border_color;
+}
+QHeaderView::section:first {
+    border-top-left-radius: 8px;
+}
+QHeaderView::section:last {
+    border-top-right-radius: 8px;
+}
+QHeaderView::down-arrow,
+QHeaderView::up-arrow {
+    width: 20px;
+    height: 20px;
+}
+QHeaderView::down-arrow {
+    image: url(:/icons/@ui_mode/arrow_down.svg);
+}
+QHeaderView::up-arrow {
+    image: url(:/icons/@ui_mode/arrow_up.svg);
+}
+
+/* Checkbox Indicators */
+QAbstractItemView::indicator {
+    width: 12px;
+    height: 12px;
+    background-color: @secondary_bg_color;
+    margin-right: 4px;
+    border-radius: 3px;
+    padding: 2px;
+}
+QAbstractItemView::indicator:checked {
+    image: url(:/icons/@accent_fg_ui_mode/checkmark.svg);
+}
+QAbstractItemView::indicator:hover {
+    background-color: @highlighted_bg_color;
+}
+QAbstractItemView::indicator:checked {
+    background-color: @primary_accent_color;
+}
+QAbstractItemView::indicator:checked:hover {
+    background-color: @hover_accent_color;
+}
+QAbstractItemView::indicator:disabled {
+    background-color: transparent;
+}

@@ -1,0 +1,68 @@
+/* 
+ * Copyright (c) Cutleast
+ */
+
+/* General */
+* {
+    color: @primary_fg_color;
+    font-family: '@primary_font';
+}
+*:disabled {
+    color: @disabled_fg_color;
+}
+
+#monospace {
+    font-family: '@monospace_font';
+    font-size: 9pt;
+}
+
+
+/* Headings */
+#h1 {
+    font-family: '@title_font';
+    font-size: 42px;
+}
+#h2 {
+    font-family: '@title_font';
+    font-size: 32px;
+}
+#h3 {
+    font-family: '@title_font';
+    font-size: 28px;
+}
+#h4 {
+    font-family: '@title_font';
+    font-size: 22px;
+}
+
+/* Base widgets */
+QWidget {
+    background-color: @primary_bg_color;
+    border-color: @border_color;
+    border-radius: 8px;
+}
+QWidget:disabled {
+    background-color: @disabled_bg_color;
+    border-color: @disabled_border_color;
+}
+
+/* Labels */
+QLabel,
+QLabel:disabled {
+    background-color: transparent;
+}
+
+QLCDNumber {
+    background-color: @secondary_bg_color;
+    border-radius: 8px;
+}
+
+/* Windows, Messageboxes and Dialogs */
+QMainWindow,
+QDialog,
+QWidget#root,
+QMainWindow:disabled,
+QDialog:disabled,
+QWidget#root:disabled {
+    background-color: @primary_bg_color;
+}

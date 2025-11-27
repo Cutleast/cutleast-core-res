@@ -1,0 +1,34 @@
+/* 
+ * Copyright (c) Cutleast
+ */
+
+/* Scrollbars */
+QScrollBar {
+    background-color: @secondary_bg_color;
+    width: 6px;
+    border-radius: 3px;
+}
+QScrollBar, QScrollBar::handle {
+    border-radius: 3px;
+}
+QScrollBar::handle {
+    background-color: @hover_bg_color;
+    min-height: 24px;
+    width: 6px;
+}
+QScrollBar::handle:hover {
+    background-color: @highlighted_bg_color;
+}
+QScrollBar::handle:pressed {
+    background-color: @primary_accent_color;
+}
+QScrollBar::up-arrow,
+QScrollBar::down-arrow,
+QScrollBar::add-line,
+QScrollBar::sub-line,
+QScrollBar::add-page,
+QScrollBar::sub-page {
+    border: 0px solid;
+    height: 0px;
+    background-color: transparent;
+}

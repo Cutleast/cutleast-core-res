@@ -10,7 +10,8 @@
     color: #666666;
 }
 
-#protocol
+#protocol,
+#monospace
 {
     font-family: 'Consolas';
     font-size: 9pt;

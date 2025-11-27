@@ -1,0 +1,39 @@
+/* 
+ * Copyright (c) Cutleast
+ */
+
+/* Toolbars */
+QToolBar {
+    background-color: @secondary_bg_color;
+    border: 0px;
+    padding: 3px;
+}
+QToolBar::separator {
+    margin: 3px;
+    width: 1px;
+    background-color: @highlighted_bg_color;
+}
+
+QToolBar > QToolButton {
+    border-color: transparent;
+    padding: 7px;
+    max-width: 24px;
+    max-height: 24px;
+}
+
+QToolBar > QToolButton:disabled {
+    background-color: @secondary_bg_color;
+}
+
+QToolBar > QToolButton#highlighted {
+    border-bottom-color: @primary_accent_color;
+}
+
+QToolButton::menu-button:hover,
+QToolButton::menu-button:selected,
+QToolButton::menu-button:pressed {
+    background-color: transparent;
+}
+QToolButton::menu-arrow {
+    image: url(:/icons/@ui_mode/arrow_down.svg);
+}

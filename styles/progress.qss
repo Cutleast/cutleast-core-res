@@ -1,0 +1,17 @@
+/* 
+ * Copyright (c) Cutleast
+ */
+
+/* Progressbars */
+QProgressBar {
+    background-color: @secondary_bg_color;
+    max-height: 4px;
+    border-radius: 2px;
+}
+QProgressBar::chunk {
+    background-color: @primary_accent_color;
+    border-radius: 2px;
+}
+QProgressBar#error::chunk {
+    background-color: #d74343;
+}

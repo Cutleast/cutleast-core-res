@@ -1,0 +1,161 @@
+/* 
+ * Copyright (c) Cutleast
+ */
+
+/* Text Edits */
+QLineEdit,
+QTextEdit,
+QPlainTextEdit {
+    background-color: @secondary_bg_color;
+    placeholder-text-color: @placeholder_fg_color;
+    border: 2px solid @border_color;
+    padding: 7px;
+}
+QLineEdit:read-only,
+QTextEdit:read-only,
+QPlainTextEdit:read-only {
+    background-color: @primary_bg_color;
+}
+QLineEdit:hover:!read-only,
+QTextEdit:hover:!read-only,
+QPlainTextEdit:hover:!read-only {
+    background-color: @hover_bg_color;
+}
+QLineEdit:focus:!read-only,
+QTextEdit:focus:!read-only,
+QPlainTextEdit:focus:!read-only {
+    background-color: @secondary_bg_color;
+}
+QLineEdit:focus:!read-only {
+    border-bottom-color: @primary_accent_color;
+}
+QTextEdit#monospace,
+QPlainTextEdit#monospace {
+    font-size: 10pt;
+}
+
+/* Text Edits with buttons */
+QLineEdit QPushButton,
+QTextEdit QPushButton,
+QPlainTextEdit QPushButton {
+    border-color: transparent;
+    padding: 6px;
+    margin: 1px;
+    background-color: transparent;
+}
+QLineEdit:hover:!focus QPushButton:hover,
+QTextEdit:hover:!focus QPushButton:hover,
+QPlainTextEdit:hover:!focus QPushButton:hover {
+    background-color: @highlighted_bg_color;
+}
+
+BrowseLineEdit,
+ColorLineEdit,
+CopyLineEdit,
+PasteLineEdit,
+KeyLineEdit {
+    padding-right: 38px;
+}
+SearchBar {
+    padding-right: 76px;
+}
+
+ColorLineEdit QPushButton {
+    padding: 3px;
+}
+
+/* Comboboxes */
+QComboBox {
+    background-color: @secondary_bg_color;
+    border: 2px solid @border_color;
+    padding: 7px;
+}
+QComboBox:hover {
+    background-color: @hover_bg_color;
+}
+QComboBox:editable:focus {
+    background-color: @secondary_bg_color;
+    border-bottom-color: @primary_accent_color;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: right;
+    padding-right: 8px;
+    border-radius: 4px;
+    border: 0px;
+}
+QComboBox::down-arrow {
+    width: 24px;
+    height: 24px;
+    image: url(:/icons/@ui_mode/arrow_down.svg);
+}
+QComboBox::down-arrow:disabled {
+    image: url(:/icons/disabled/arrow_down.svg);
+}
+QComboBox QAbstractItemView {
+    background-color: @popup_bg_color;
+    color: @popup_fg_color;
+    border: 1px solid @highlighted_bg_color;
+    border-radius: 8px;
+    padding: 4px;
+}
+QComboBox QAbstractItemView::item {
+    background-color: @popup_bg_color;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 4px;
+}
+QComboBox QAbstractItemView::item:selected {
+    background-color: @hover_bg_color;
+    color: @primary_fg_color;
+}
+
+/* Spinboxes */
+QSpinBox,
+QDoubleSpinBox {
+    background-color: @secondary_bg_color;
+    placeholder-text-color: @placeholder_fg_color;
+    border: 2px solid @border_color;
+    padding: 7px;
+}
+QSpinBox:hover,
+QDoubleSpinBox:hover {
+    background-color: @hover_bg_color;
+}
+QSpinBox:focus,
+QDoubleSpinBox:focus {
+    background-color: @secondary_bg_color;
+    border-bottom-color: @primary_accent_color;
+}
+
+QSpinBox::up-button,
+QSpinBox::down-button,
+QDoubleSpinBox::up-button,
+QDoubleSpinBox::down-button {
+    border: 0px;
+    border-radius: 4px;
+    height: 18px;
+    width: 20px;
+}
+QSpinBox::up-button:hover,
+QSpinBox::down-button:hover,
+QDoubleSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover {
+    background-color: @highlighted_bg_color;
+}
+QSpinBox::up-button,
+QDoubleSpinBox::up-button {
+    image: url(:/icons/@ui_mode/arrow_up.svg);
+}
+QSpinBox::down-button,
+QDoubleSpinBox::down-button {
+    image: url(:/icons/@ui_mode/arrow_down.svg);
+}
+QSpinBox::up-button:disabled,
+QDoubleSpinBox::up-button:disabled {
+    image: url(:/icons/disabled/arrow_up.svg);
+}
+QSpinBox::down-button:disabled,
+QDoubleSpinBox::down-button:disabled {
+    image: url(:/icons/disabled/arrow_down.svg);
+}

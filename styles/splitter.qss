@@ -1,0 +1,17 @@
+/* 
+ * Copyright (c) Cutleast
+ */
+
+/* Splitter */
+QSplitter,
+QSplitter::handle {
+    background-color: @primary_bg_color;
+}
+QSplitter::handle:horizontal {
+    image: url(:/icons/@ui_mode/vertical_grip.png);
+    width: 15px;
+}
+QSplitter::handle:vertical {
+    image: url(:/icons/@ui_mode/horizontal_grip.png);
+    height: 15px;
+}

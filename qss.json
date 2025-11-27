@@ -1,0 +1,15 @@
+[
+    "styles/base.qss",
+    "styles/area.qss",
+    "styles/buttons.qss",
+    "styles/inputs.qss",
+    "styles/menu.qss",
+    "styles/popup.qss",
+    "styles/progress.qss",
+    "styles/scroll.qss",
+    "styles/splitter.qss",
+    "styles/statusbar.qss",
+    "styles/tab.qss",
+    "styles/toolbar.qss",
+    "styles/view.qss"
+]
