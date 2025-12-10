@@ -98,7 +98,8 @@ QHeaderView::up-arrow {
 }
 
 /* Checkbox Indicators */
-QAbstractItemView::indicator {
+QAbstractItemView::indicator,
+QAbstractItemView QCheckBox::indicator {
     width: 12px;
     height: 12px;
     background-color: @secondary_bg_color;
