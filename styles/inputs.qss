@@ -43,6 +43,12 @@ QPlainTextEdit QPushButton {
     margin: 1px;
     background-color: transparent;
 }
+QLineEdit QPushButton:disabled,
+QTextEdit QPushButton:disabled,
+QPlainTextEdit QPushButton:disabled {
+    border-color: transparent;
+    background-color: transparent;
+}
 QLineEdit:hover:!focus QPushButton:hover,
 QTextEdit:hover:!focus QPushButton:hover,
 QPlainTextEdit:hover:!focus QPushButton:hover {

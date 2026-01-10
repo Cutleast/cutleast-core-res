@@ -23,6 +23,7 @@ QToolBar > QToolButton {
 
 QToolBar > QToolButton:disabled {
     background-color: @secondary_bg_color;
+    border-color: @secondary_bg_color;
 }
 
 QToolBar > QToolButton#highlighted {
