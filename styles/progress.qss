@@ -12,6 +12,7 @@ QProgressBar::chunk {
     background-color: @primary_accent_color;
     border-radius: 2px;
 }
-QProgressBar#error::chunk {
+QProgressBar#error::chunk,
+QProgressBar[failed="true"]::chunk {
     background-color: #d74343;
 }
