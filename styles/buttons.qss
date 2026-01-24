@@ -34,6 +34,7 @@ QAbstractButton#primary {
 QAbstractButton[default=true]:hover,
 QAbstractButton#primary:hover {
     background-color: @hover_accent_color;
+    border-color: @hover_accent_color;
 }
 QAbstractButton[default=true]:disabled,
 QAbstractButton#primary:disabled {
