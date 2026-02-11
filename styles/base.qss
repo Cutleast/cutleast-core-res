@@ -11,7 +11,8 @@
     color: @disabled_fg_color;
 }
 
-#monospace {
+#monospace,
+[monospace=true] {
     font-family: '@monospace_font';
     font-size: 9pt;
 }
