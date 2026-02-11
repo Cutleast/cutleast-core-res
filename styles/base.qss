@@ -17,6 +17,10 @@
     font-size: 9pt;
 }
 
+[secondary=true] {
+    color: @secondary_fg_color;
+}
+
 
 /* Headings */
 #h1 {
