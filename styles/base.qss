@@ -62,6 +62,14 @@ QLCDNumber {
     border-radius: 8px;
 }
 
+/* Collapsible labels */
+CollapsibleLabel[expandable=true] {
+    padding-right: 40px;
+}
+CollapsibleLabel QPushButton#toggle_button {
+    border-color: transparent;
+}
+
 /* Windows, Messageboxes and Dialogs */
 QMainWindow,
 QDialog,
