@@ -92,3 +92,7 @@ QRadioButton::indicator:checked:hover {
     background-color: @hover_accent_color;
     border-color: @hover_bg_color;
 }
+QCheckBox::indicator:checked:disabled,
+QRadioButton::indicator:checked:disabled {
+    background-color: @disabled_fg_color;
+}

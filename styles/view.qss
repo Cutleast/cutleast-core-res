@@ -122,3 +122,6 @@ QAbstractItemView::indicator:checked:hover {
 QAbstractItemView::indicator:disabled {
     background-color: transparent;
 }
+QAbstractItemView::indicator:checked:disabled {
+    background-color: @disabled_fg_color;
+}
