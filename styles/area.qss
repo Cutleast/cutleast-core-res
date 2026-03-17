@@ -26,13 +26,13 @@ QGroupBox::title {
 SectionAreaWidget {
     background-color: @primary_bg_color;
 }
-SectionAreaWidget QPushButton#toggle_button {
+SectionAreaWidget > QPushButton#toggle_button {
     background-color: @primary_bg_color;
     border-color: @primary_bg_color;
 }
-SectionAreaWidget QPushButton#toggle_button:hover {
+SectionAreaWidget > QPushButton#toggle_button:hover {
     background-color: @hover_bg_color;
 }
-SectionAreaWidget QPushButton#toggle_button:pressed {
+SectionAreaWidget > QPushButton#toggle_button:pressed {
     background-color: @active_bg_color;
 }
