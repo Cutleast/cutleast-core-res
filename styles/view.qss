@@ -68,6 +68,23 @@ QTreeView::item:disabled {
     color: @disabled_fg_color;
 }
 
+/* TreeWidgetEditor */
+TreeWidgetEditor > QToolBar {
+    padding: 0px;
+}
+TreeWidgetEditor > QToolBar,
+TreeWidgetEditor > QToolBar:disabled,
+TreeWidgetEditor > QToolBar > QToolButton:disabled {
+    background-color: @primary_bg_color;
+}
+TreeWidgetEditor > QToolBar > QToolButton {
+    margin: 2px;
+    border-radius: 8px;
+}
+TreeWidgetEditor > QToolBar > QToolButton:disabled {
+    border-color: @primary_bg_color;
+}
+
 /* Header View */
 QHeaderView {
     background-color: transparent;
