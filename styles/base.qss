@@ -21,6 +21,10 @@
     color: @secondary_fg_color;
 }
 
+[secondary=true]:disabled {
+    color: @disabled_fg_color;
+}
+
 
 /* Headings */
 #h1 {
