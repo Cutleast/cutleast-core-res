@@ -25,6 +25,10 @@
     color: @disabled_fg_color;
 }
 
+[bold=true] {
+    font-weight: bold;
+}
+
 
 /* Headings */
 #h1 {
