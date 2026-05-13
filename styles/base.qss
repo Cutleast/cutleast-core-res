@@ -29,6 +29,10 @@
     font-weight: bold;
 }
 
+[transparent=true] {
+    background-color: transparent;
+}
+
 
 /* Headings */
 #h1 {
