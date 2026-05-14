@@ -4,7 +4,8 @@
 
 /* Tooltips & Toast */
 QToolTip,
-Toast > QFrame {
+Toast QFrame#content_frame,
+Popup QFrame#content_frame {
     background-color: @popup_bg_color;
     color: @popup_fg_color;
     border: 1px solid @border_color;
