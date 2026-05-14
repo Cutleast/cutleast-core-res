@@ -36,3 +36,16 @@ SectionAreaWidget > QPushButton#toggle_button:hover {
 SectionAreaWidget > QPushButton#toggle_button:pressed {
     background-color: @active_bg_color;
 }
+
+/* Flexcontainer */
+FlexContainer DragHandle {
+    qproperty-handleSize: 18;
+}
+
+FlexContainer DropIndicator {
+    qproperty-indicatorColor: @primary_accent_color;
+}
+
+FlexContainer PanelTile #flex_tile_title {
+    font-size: 22px;
+}
