@@ -53,7 +53,9 @@ ShortcutButton#primary > QLabel {
 QCheckBox,
 QRadioButton,
 QCheckBox:hover,
-QRadioButton:hover {
+QRadioButton:hover,
+QCheckBox:disabled,
+QRadioButton:disabled {
     background-color: transparent;
     border: 0px;
 }
