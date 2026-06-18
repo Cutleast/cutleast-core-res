@@ -2,9 +2,8 @@
  * Copyright (c) Cutleast
  */
 
-/* Tooltips & Toast */
+/* Tooltips & Popups */
 QToolTip,
-Toast QFrame#content_frame,
 Popup QFrame#content_frame {
     background-color: @popup_bg_color;
     color: @popup_fg_color;
@@ -13,6 +12,19 @@ Popup QFrame#content_frame {
     border-radius: 8px;
 }
 
-Toast QLabel {
+/* Toast */
+Toast, Toast QLabel {
+    background: transparent;
     color: @popup_fg_color;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+Toast QFrame {
+    background: @popup_bg_color;
+    border-radius: 8px;
+    padding: 5px;
+}
+Toast QFrame#content_frame {
+    border: 1px solid @border_color;
 }
