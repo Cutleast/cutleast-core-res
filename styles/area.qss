@@ -22,6 +22,32 @@ QGroupBox::title {
     margin-right: 5px;
 }
 
+QGroupBox::indicator {
+    width: 16px;
+    height: 16px;
+    background-color: @secondary_bg_color;
+    margin-right: 4px;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+QGroupBox::indicator:checked {
+    background-color: @primary_accent_color;
+    image: url(:/icons/@accent_fg_ui_mode/checkmark.svg);
+}
+
+QGroupBox::indicator:hover {
+    background-color: @hover_bg_color;
+    border-color: @hover_bg_color;
+}
+QGroupBox::indicator:checked:hover {
+    background-color: @hover_accent_color;
+    border-color: @hover_bg_color;
+}
+QGroupBox::indicator:checked:disabled {
+    background-color: @disabled_fg_color;
+}
+
 /* Section Area Widget */
 SectionAreaWidget {
     background-color: @primary_bg_color;
