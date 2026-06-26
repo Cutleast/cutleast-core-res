@@ -16,3 +16,10 @@ QProgressBar#error::chunk,
 QProgressBar[failed="true"]::chunk {
     background-color: #d74343;
 }
+
+/* Spinners */
+SpinnerWidget,
+SpinnerWidget > QSvgWidget,
+SpinnerWidget > QLabel {
+    background-color: transparent;
+}
